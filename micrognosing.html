@@ -118,5 +118,19 @@ scent.
 
 <!-- Poetry End -->
 
+<!-- Disable right-click -->
+
+<script>
+  // Disable right-click
+  document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+  });
+
+  // Disable text selection using JavaScript (extra layer of protection)
+  document.addEventListener('selectstart', function(event) {
+    event.preventDefault();
+  });
+</script>
+
 </body>
 </html>
